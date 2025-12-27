@@ -1,3 +1,21 @@
 spring:
   application:
     name: MixBalancer
+
+  profiles:
+    active: ${SPRING_PROFILES_ACTIVE:memory}
+
+server:
+  port: ${PORT:8080}
+
+balancer:
+  max-iterations: ${BALANCER_ITERATIONS:3000}
+
+logging:
+  level:
+    root: INFO
+    com.overwatch: DEBUG
+    org.springframework.web: INFO
+    org.hibernate: WARN
+  pattern:
+    console: "%d{HH:mm:ss.SSS} %highlight(%-5level) [%thread] %cyan(%logger{20}) - %msg%n"
