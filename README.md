@@ -1,4 +1,4 @@
-# 🎮 MixBalancer
+# 🎮 MixBalancer v1.0
 
 <div align="center">
 
