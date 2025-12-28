@@ -5,6 +5,7 @@ import com.overwatch.balancer.domain.enumeration.GameMap;
 import com.overwatch.balancer.domain.enumeration.GameMode;
 import com.overwatch.balancer.domain.model.Match;
 import com.overwatch.balancer.domain.model.Player;
+import com.overwatch.balancer.exception.BalanceException;
 import com.overwatch.balancer.repository.MatchRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
@@ -148,12 +149,6 @@ public class BalancerService {
 
     public List<GameMap> getMapsByMode(GameMode mode) {
         return GameMap.getByMode(mode);
-    }
-
-    public static class BalanceException extends RuntimeException {
-        public BalanceException(String message) {
-            super(message);
-        }
     }
 
 }

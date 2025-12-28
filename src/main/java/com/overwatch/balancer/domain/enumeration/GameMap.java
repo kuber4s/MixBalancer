@@ -32,6 +32,7 @@ public enum GameMap {
     // Flashpoint Maps
     NEW_JUNK_CITY("New Junk City", GameMode.FLASHPOINT),
     SURAVASA("Suravasa", GameMode.FLASHPOINT),
+    AATLIS("Aatlis", GameMode.FLASHPOINT),
 
     // Hybrid Maps
     BLIZZARD_WORLD("Blizzard World", GameMode.HYBRID),

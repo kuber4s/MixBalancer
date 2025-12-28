@@ -9,7 +9,7 @@ import lombok.Getter;
 public class SkillRating implements Comparable<SkillRating> {
 
     public static final int MIN_VALUE = 0;
-    public static final int MAX_VALUE = 5500;
+    public static final int MAX_VALUE = 5000;
 
     public static final SkillRating ZERO = new SkillRating(0);
 
