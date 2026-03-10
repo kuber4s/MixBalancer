@@ -1,5 +1,10 @@
 pipeline {
-    agent any
+    agent {
+        docker {
+            image 'maven:3.9-eclipse-temurin-21'
+            args '-v /root/.m2:/root/.m2 -v /var/run/docker.sock:/var/run/docker.sock'
+        }
+    }
 
     environment {
         APP_NAME = 'mixbalancer'
